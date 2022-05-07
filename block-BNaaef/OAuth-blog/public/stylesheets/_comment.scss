@@ -1,0 +1,39 @@
+.comment-form-container{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    margin: 2rem 0;
+    button {
+        background-color: white;
+        color: black;
+    }
+
+}
+.comment-form{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 5rem ;
+    &>div {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+}
+
+.comments-container{
+    padding: 1rem 5rem;
+    background-color: whitesmoke;
+    h1{
+        color: black;
+    }
+    .comment{
+        background-color:black;
+        color: white;
+        margin: 1rem 0;
+        padding: 1.5rem;
+        border-radius: 10px;
+        button {
+            padding: 0.25rem 1rem;
+        }
+    }
+}

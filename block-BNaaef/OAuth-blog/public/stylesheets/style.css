@@ -1,0 +1,240 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: black;
+  color: blanchedalmond;
+  border-radius: 10px;
+  border: none;
+  padding: 1rem 2rem;
+}
+
+.hero-form {
+  min-height: 85vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+.form {
+  background-color: black;
+  padding: 2rem;
+  border-radius: 10px;
+  color: burlywood;
+}
+
+.form > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem 0;
+}
+
+.form button {
+  background-color: burlywood;
+  color: black;
+  font-weight: bold;
+}
+
+.hero-container h2 {
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.header {
+  padding: 2rem 0;
+  background-color: black;
+}
+
+.header a {
+  text-decoration: none;
+  color: wheat;
+}
+
+.header h1 {
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header nav button {
+  background-color: white;
+  font-weight: 900;
+  color: black;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 85vh;
+  border: 1px solid black;
+}
+
+.hero h2 {
+  font-size: 2rem;
+}
+
+.hero a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.comment-form-container {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  margin: 2rem 0;
+}
+
+.comment-form-container button {
+  background-color: white;
+  color: black;
+}
+
+.comment-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem 5rem;
+}
+
+.comment-form > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+}
+
+.comments-container {
+  padding: 1rem 5rem;
+  background-color: whitesmoke;
+}
+
+.comments-container h1 {
+  color: black;
+}
+
+.comments-container .comment {
+  background-color: black;
+  color: white;
+  margin: 1rem 0;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.comments-container .comment button {
+  padding: 0.25rem 1rem;
+}
+/*# sourceMappingURL=style.css.map */

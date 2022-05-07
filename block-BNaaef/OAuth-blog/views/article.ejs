@@ -1,0 +1,84 @@
+<%- include('partials/header') -%>
+
+      <main>
+          <div class="hero-container">
+              <div class="container">
+                  <div>
+                      <h2>Title : </h2>
+                      <h3><%= article.title%></h3>
+                  </div>
+                  <div>
+                      <h2>Description :</h2>
+                      <p><%= article.description%></p>
+                  </div>
+                  <div>
+                      <h2>Likes :</h2>
+                      <span><%= article.likes%></span>
+                      <div>
+                        <a href="/articles/<%=article.slug%>/likes/increment">
+                            <button>Increment</button>
+                        </a>
+                        <a href="/articles/<%=article.slug%>/likes/decrement">
+                            <button>Decrement</button>
+                        </a>
+                      </div>
+                      
+                  </div>
+                  <div>
+                      <h2>Author :</h2>
+                      <p><%= article.author.firstName%></p>
+                  </div>
+                  <div>
+                      <h2>Slug :</h2>
+                      <p><%= article.slug%></p>
+                  </div>
+                  <div>
+                    <a href="/articles/<%= article.slug%>/edit">
+                      <button>Edit Article</button>
+                    </a>
+                    <a href="/articles/<%= article.slug%>/delete">
+                      <button>Delete</button>
+                    </a>
+                  </div>
+                  <div class="comment-form-container">
+                    <form class="comment-form" action="/articles/<%= article.slug%>/comment" method="POST">
+                      <div>
+                        Content :
+                        <textarea name="content" id="" cols="30" rows="10"></textarea>
+                      </div>
+                      <div>
+                        <button type="submit">Add Comment</button>
+                      </div>
+                    </form>
+                    <div class="comments-container">
+                      <h1>Comments :</h1>
+                      <% article.comments.forEach(comment => { %>
+                        <div class="comment">
+                          <p>Content :<%= comment.content%></p>
+                          <p>Author :<%= comment.comment_author.firstName %></p>
+                          <span>Likes : <%= comment.likes%></span>
+                          <span>Dislikes : <%= comment.dislikes %></span>
+                          <div>
+                            <a href="/comments/<%= comment.id%>/edit">
+                              <button>Edit</button>
+                            </a>
+                            <a href="/comments/<%= comment.id%>/delete">
+                              <button>Delete</button>
+                            </a>
+                            <a href="/comments/<%= comment.id%>/likes">
+                              <button>Likes</button>
+                            </a>
+                            <a href="/comments/<%= comment.id%>/dislikes">
+                              <button>Dislikes</button>
+                            </a>
+                          </div>
+                        </div>
+                      <% })%>
+                    </div>
+                  </div>
+              </div>
+                
+          </div>
+      </main>
+</body>
+</html>

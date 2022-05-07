@@ -1,0 +1,35 @@
+<%- include('partials/header') -%>
+
+      <main>
+          <div class="hero-form">
+              <div class="container">
+                  <form class="form" action="/users/register" method="POST">
+                      <div>
+                          First Name:
+                          <input type="text" name="firstName">
+                      </div>
+                      <div>
+                          Last Name:
+                          <input type="text" name="lastName">
+                      </div>
+                      <div>
+                          Email:
+                          <input type="email" name="email" id="">
+                      </div>
+                      <div>
+                            Password :
+                            <input type="password" name="password" id="">
+                      </div>
+                      <div>
+                            City :
+                            <input type="text" name="city" id="">
+                      </div>
+                      <div>
+                          <button type="submit">Register</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </main>
+</body>
+</html>
