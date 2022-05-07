@@ -1,0 +1,18 @@
+<%- include('partials/header') -%>
+      <main>
+          <div class="hero-container">
+              <div class="container">
+                  <% articles.forEach(article => { %>
+                    <div class="article" style="background-color: darkgray; padding: 2rem; margin: 1rem 0; border-radius: 10px;">
+                        <h2><%= article.title%></h2>
+                        <p><%= article.description.substring(0,150) + "....."%></p>
+                        <a href="/articles/<%= article.slug %>">
+                            <button>Learn More...</button>
+                        </a>
+                    </div>
+                  <% })%>
+              </div>
+          </div>
+      </main>
+</body>
+</html>

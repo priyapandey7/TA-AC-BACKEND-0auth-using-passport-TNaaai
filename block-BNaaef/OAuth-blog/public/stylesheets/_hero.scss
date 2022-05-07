@@ -1,0 +1,15 @@
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    border: 1px solid black;
+    h2 {
+        font-size: 2rem;
+    }
+    a{
+        display: flex;
+        justify-content: center;
+        
+    }
+}
