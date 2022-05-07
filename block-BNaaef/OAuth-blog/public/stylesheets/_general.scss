@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.container{
+    max-width: 1150px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+    background-color: black;
+    color: blanchedalmond;
+    border-radius: 10px;
+    border: none;
+    padding: 1rem 2rem;
+}
+
+.hero-form {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.form{
+    background-color: black;
+    padding: 2rem;
+    border-radius: 10px;
+    color: burlywood;
+    &>div{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+    button{
+        background-color: burlywood;
+        color: black;
+        font-weight: bold;
+    }
+}
+.hero-container{
+    h2{
+        font-size: 1.25rem;
+        font-weight: 800;
+    }
+}

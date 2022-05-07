@@ -1,0 +1,19 @@
+<%- include('partials/header') -%>
+
+      <main>
+        <div class="hero-form">
+            <div class="container">
+                <form class="form" action="/comments/<%= comment.id%>" method="POST">
+                    <div>
+                        Content:
+                        <textarea name="content" id="" cols="30" rows="10"><%= comment.content%></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Update Comment</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+      </main>
+</body>
+</html>
